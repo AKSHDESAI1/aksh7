@@ -5,7 +5,7 @@ import session from "express-session";
 import MongoStore from "connect-mongo";
 
 const app = express();
-const PORT = 8000;
+const PORT = 3000; 
 
 //Connect to mongodb Database. 
 connectDb();

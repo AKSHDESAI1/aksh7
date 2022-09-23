@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connectDb = async () => {
     try {
-        const mongoUri = "mongodb://localhost:27017";
+        const mongoUri = "mongodb+srv://aksh2137:aksh2137@cluster0.jpqpxva.mongodb.net/";
         const dbOptions = {
             dbName: "Assignment"
         };
