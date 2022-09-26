@@ -12,7 +12,7 @@ connectDb();
 
 // MongoDB Session
 const sessionStorage = MongoStore.create({
-    mongoUrl: "mongodb://localhost:27017",
+    mongoUrl: "mongodb+srv://aksh2137:aksh2137@cluster0.jpqpxva.mongodb.net/",
     dbName: "Assignment",
     collectionName: "session",
     ttl: 5,
@@ -25,8 +25,8 @@ app.use(session({
     secret: "iamkey",
     resave: false,
     saveUninitialized: true,
-    cookie: { maxAge: 10000 },
-    store: sessionStorage
+    cookie: { maxAge: 60 * 60 * 24 * 14 },
+    // store: sessionStorage
 }))
 
 app.use(express.urlencoded({ extended: false }));
